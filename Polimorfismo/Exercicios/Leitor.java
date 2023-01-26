@@ -1,4 +1,4 @@
-package NotasAlunos;
+package Polimorfismo.Exercicios;
 
 import java.util.Scanner;
 

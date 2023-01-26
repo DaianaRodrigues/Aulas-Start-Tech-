@@ -1,3 +1,5 @@
+package piscina;
+
 public class Medidas {
     double largura;
     double comprimento;

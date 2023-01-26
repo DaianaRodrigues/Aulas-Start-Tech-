@@ -1,3 +1,5 @@
+package Teste;
+
 import java.time.LocalDate;
 
 public class Aluno extends Pessoa{
@@ -11,7 +13,8 @@ public class Aluno extends Pessoa{
         return matricula;
     }
 
-    public void setMatricula(int matricula) {
+    public void setMatri
+    cula(int matricula) {
         this.matricula = matricula;
     }
 }

@@ -1,3 +1,5 @@
+package NotasAlunos;
+
 public class Main {
     public static void main(String[] args) {
         int qtdAlunos = 3;

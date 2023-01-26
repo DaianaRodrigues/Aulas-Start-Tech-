@@ -1,17 +1,40 @@
 package Polimorfismo.Exercicios;
 
-public class PessoaFisica {
-    DadosClientes dadosClientes = new DadosClientes();
-    String nome;
-    String cpf;
-    String telefone;
-    String email;
+public class PessoaFisica extends Pessoa{
+    private String nome;
+    private String cpf;
+    private String telefone;
 
-    public String pessoaFisica(){
-        System.out.print("Digite o nome do cliente: ");
-        nome = dadosClientes.resposta;
-        System.out.print("Digite o CPF do cliente:");
-        System.out.print("Digite o telefone do cliente:");
-        System.out.print("");
+    public PessoaFisica(String nome, String cpf, String telefone, String email) {
+        super(email);
+
+        this.nome = nome;
+        this.cpf = cpf;
+        this.telefone = telefone;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    @Override
+    public String toString() {
+        return String.format(
+                """
+                %s
+                CPF: %s
+                Telefone: %s
+                E-mail: %s
+                """,
+                nome, cpf, telefone, getEmail()
+        );
     }
 }
